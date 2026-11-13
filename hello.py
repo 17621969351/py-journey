@@ -8,7 +8,7 @@ def greet(name: str, city: str) -> str:
 def main() -> None:
     args = sys.argv[1:]
     if len(args) < 2:
-        print("用法: python 3.12    hello.py <名字> <城市>")
+        print("用法: python3.12    hello.py <名字> <城市>")
         sys.exit(1)
     print(greet(args[0], args[1]))
 
