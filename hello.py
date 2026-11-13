@@ -1,16 +1,16 @@
 import sys
 
 
-def greet(name: str) -> str:
-    return f"Hello, {name}! 今天是学习Python的第一天。"
+def greet(name: str, city: str) -> str:
+    return f"Hello, {name}! 你来自{city},今天是学习Python的第一天。"
 
 
 def main() -> None:
     args = sys.argv[1:]
-    if not args:
-        print("用法: python 3.12    hello.py <名字>")
+    if len(args) < 2:
+        print("用法: python 3.12    hello.py <名字> <城市>")
         sys.exit(1)
-    print(greet(args[0]))
+    print(greet(args[0], args[1]))
 
 
 if __name__ == "__main__":
