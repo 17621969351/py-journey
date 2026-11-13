@@ -2,7 +2,7 @@ import sys
 
 
 def greet(name: str, city: str) -> str:
-    return f"Hello, {name}! 你来自{city},今天是学习Python的第一天。"
+    return f"你好呀, {name}! 你来自{city},今天是学习Python的第一天。"
 
 
 def main() -> None:
